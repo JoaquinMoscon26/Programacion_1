@@ -1,12 +1,14 @@
-//boton = get.elementbyID("boton")
+boton = document.getelementbyID("boton")
 
 
-function mostrar_mensaje(){
+function mostrar_mensaje()
+{
     //popup
     alert('Probando mi función')
 }
 
-function mostrar_en_consola(){
+function mostrar_en_consola()
+{
     
     //asignamos una cadena de string en una constante
     const nombre_apellido = 'Moscon Joaquin Emanuel'
@@ -28,12 +30,39 @@ function mostrar_en_consola(){
 
 //condicionales
 
-function validar(){
-    const calificacion = prompt('ingrese suu calificación: ');
 
+function validar()
+{
+    const calificacion = prompt('ingrese su calificación: ');
+/*
     if(calificacion>=7){
         alert('Estás Aprobado')
     }else{
         alert('Nos veremos en diciembre')
-    }
+    }*/
+    
+    //expresión ternaria (solo se usa cuando hay un solo if y un solo else).
+
+    (calificacion >=7) ? alert('estás aprobado') : alert('Desaprobado')
+
+}
+
+//Función con retorno y comunicación entre funciones.
+
+function calcular()
+{
+    const number = prompt('Ingresar un número: ');
+    const resultado = number * 10
+
+    //estamos entregando una respuesta
+    return resultado
+}
+
+function visualizar()
+{
+    //invocamos (ejecutamos) la función ejecutar.
+    const respuesta = calcular()
+    alert(respuesta)
+
+
 }
