@@ -59,6 +59,11 @@ function calcular()
 }
 
 function visualizar()
+
+
+
+
+
 {
     //invocamos (ejecutamos) la función ejecutar.
     const respuesta = calcular()

@@ -1,7 +1,7 @@
 function calcular_area_circulo(r)
 {
     
-    area_resultado= 3.14159263559*Math.pow(r,2)
+    const area_resultado= 3.14159263559*Math.pow(r,2)
     return area_resultado
 }
 
