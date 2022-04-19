@@ -43,7 +43,7 @@ function validar()
     
     //expresión ternaria (solo se usa cuando hay un solo if y un solo else).
 
-    (calificacion >=7) ? alert('estás aprobado') : alert('Desaprobado')
+    (calificacion >=7) ? alert('estás aprobado') : alert('Desaprobado') //?=Si esto se cumple :=sino
 
 }
 
