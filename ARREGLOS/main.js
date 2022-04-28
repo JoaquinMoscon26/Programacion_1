@@ -3,7 +3,7 @@
 //Creamos un arreglo de string.
 let series = ['Breaking Bad','OKUPAS','Narcos','Casados con Hijos','Peaky Blinders']
 
-//Como conocer la longitud de un aarray.
+//Como conocer la longitud de un array.
 const longitud = series.length
 
 console.log('La longitud del arreglo es: ' + longitud)
@@ -70,3 +70,4 @@ let copia = series.slice()
 copia.push("Dragon Ball")
 console.log(copia)
 console.log(series)
+
