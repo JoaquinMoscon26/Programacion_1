@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <select name="Operaciones" id="sel_op">
+        <option value="1">Suma</option>
+        <option value="2">Resta</option>
+        <option value="3">Multiplicación</option>
+        <option value="4">División</option>
+    </select>
+
+    <br>
+    <br>
+
+    <input placeholder="Ingresar Número" type="number" id="inp_n1">
+    <input placeholder="Ingresar Número" type="number" id="inp_n2">
+
+    <button onclick="mostrar_calculo()">CALCULAR</button>
+
+    <h1>Resultado:</h1>
+    <h3 id="h3_texto"></h3>
+
+    <script src="main.js"></script>
+</body>
+</html>
