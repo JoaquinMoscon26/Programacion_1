@@ -10,11 +10,11 @@ let alumno = {
 
 }
 // forma 1
-// const yahoo = alumno.correos.yahoo
+ //const yahoo = alumno.correos.gmail
 // const gmail = alumno.correos.gmail
 // const outlook = alumno.correos.outlook
 
-// forma 2
+// forma 2 - Destructurig Object
 const { yahoo, gmail, outlook } = alumno.correos
 
 console.log(`
