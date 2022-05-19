@@ -3,7 +3,7 @@
 async function obtener_datos()
 {
     //Fetch realiza una solicitud HTTP a través del metodo GET  
-    const datos = await fetch('https://jsonplaceholder.typicode.com/posts')
+    const datos = await fetch('https://jsonplaceholder.typicode.com/posts') //<--endpoint o ruta
     const datos_definitivos= datos.json()
 
     datos_definitivos.forEach(element => {
@@ -11,3 +11,8 @@ async function obtener_datos()
         console.log(element.title)
     });
 }
+
+
+//json se le llama a los datos que viajan a través de internet. formato json. Es un formato de información.
+//Un arreglo es la sintaxis propia de JavaScript.
+
