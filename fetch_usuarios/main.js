@@ -1,7 +1,7 @@
 const consumir_datos = async () => //el await no funciona si la función no se declara como asincrona (async())
 {
 
-    const datos_recibidos = await fetch('https://jsonplaceholder.typicode.com/users')
+    const datos_recibidos = await fetch('https://jsonplaceholder.typicode.com/users') //la función fetch permite hacer solicitudes http, permitiendonos consumir datos de API
 
     /*los datos recibidos a .json significa que se recibe el json  datos extras que son propios 
     de la peticion como el tiempo de llegada: ej: 3ms. cantidad de tiempo que demoro en llegar, 

@@ -4,6 +4,7 @@ const criptomonedas = async () => {
     let filas = []
     cripto.forEach(element => {
         let fila = 
+
         `<tr>
             <td><img src="${element.image}" alt="${element.symbol} width="25" height="25"></td>
             <td>${element.name}</td>
