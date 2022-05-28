@@ -2,7 +2,6 @@
 //cuando se usa una funcion tradicional se pone 'async' delante de la palabra reservada 'function'
 async function  tomar_datos (categoria) { 
 
-
     let datos_recibidos
     if(categoria=='products'){
         datos_recibidos = await fetch('https://fakestoreapi.com/products')
@@ -18,7 +17,7 @@ async function  tomar_datos (categoria) {
         let columna =
 
             `
-            <div class="col-lg-3"> 
+            <div class="col-sm-3"> 
                 <div class="card" style="width: 18rem;">
                 <img src="${element.image}" style="height: 250px;"class="card-img-top">
                 <div class="card-body">
