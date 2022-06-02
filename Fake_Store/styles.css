@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Rammetto+One&family=Vollkorn+SC&display=swap');
+
+body{
+    margin: 0;
+}
+
+.selector_hamburguesa{
+
+    background-color: #045164;
+    color:rgb(234, 255, 50);
+}
+.boton_nav_home{
+    color: #bbff00;
+    font-family: 'Vollkorn SC', serif;
+
+}
+.boton_nav_home:hover{
+
+    color: #f559c1;
+    
+    
+}
+
+.botones_nav{
+
+    color: #8FF1FE;
+    font-family: 'Vollkorn SC', serif;
+    
+}
+
+.botones_nav:hover{
+
+    color: rgb(211, 211, 64);
+
+}
+#titulo{
+    font-family: 'Rammetto One', cursive;
+
+    color: rgb(231, 245, 111);
+    
+}
