@@ -3,6 +3,7 @@
 export default class Trapecio {
 
     //metodo que forma parte de clase
+    /*constructor es un metodo de la clase que se ejecuta al mmento de crear la instancia de la clase*/
     constructor(bma,bme,h){
 
         this.base_mayor = bma
