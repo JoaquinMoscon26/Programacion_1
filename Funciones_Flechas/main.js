@@ -23,3 +23,4 @@ const boton = document.getElementById("btn_calcular")
 
 //Agregamos un evento a escuchar. addEventListener=escuchar/estar atento, en este caso a un click.
 boton.addEventListener("click",mostrar)
+
