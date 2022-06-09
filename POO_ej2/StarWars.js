@@ -23,14 +23,39 @@ export default class StarWars {
             const anio = iterator.Year
             const poster = iterator.Poster
 
-            console.log(`
+            let rowFila = []
+            let columna =
+
+            `
+            <div class="col-sm-3"> 
+                <div class="card" style="width: 18rem;">
+                <img src="${poster}" style="height: 250px;"class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">${titulo}</h5>
+                    <p class="card-text collapse" id="collapse_${element.id}">${anio}
+                    
+                </p>
+                </div><button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_${element.id}" >
+                    Leer Descripción
+                    </button>
+                    <a href="#" class="btn btn-primary ">Comprar</a>
+                </div>
+                </div>
+            </div>
+            `
+            rowFila.push(columna)
+
+            /*console.log(`
                 Título: ${titulo}
                 Año= ${anio}
                 Poster= ${poster}
-            `)
+            `)*/
 
         }
+
+        document.getElementById("Row_Tabla").innerHTML = rowFila.join('')
     }
 }
 
+StarW_API()
 
