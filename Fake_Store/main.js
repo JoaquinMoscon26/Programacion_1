@@ -4,6 +4,7 @@ async function  tomar_datos (categoria) {
 
     let datos_recibidos
     if(categoria=='products'){
+        //la función realiza por defecto una solucitud http a travéz del metodo get obteniendo datos especificando una ruta
         datos_recibidos = await fetch('https://fakestoreapi.com/products')
     }else{
         datos_recibidos = await fetch('https://fakestoreapi.com/products/category/' + categoria)
