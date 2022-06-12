@@ -4,15 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css ">
     <title>Repaso Parte 1</title>
 </head>
 <body>
     
-    <p id="p_text1"></p>
-    <p id="p_text2"></p>
-    <p id="p_text3"></p>
-    <p id="p_text"></p>
-    <button id="btn_arreglo1"></button>
+    
+    
+
+    <nav class="navbar" style="background-color: #f5bcbc; color: #CB3A94" >
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Tabla consolas</span>
+        </div>
+    </nav>
+    <div class="container">
+        <button id="btn_arreglo1">Mostrar</button>
+        <p id="p_text"></p>
+        <br>
+        <hr>
+        <br>
+        <div class="row">
+            <div class="col-lg-3">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nº</th>
+                            <th>Consola</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody id="tbl_body">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
 
     <script src="main.js"></script>
 </body>
