@@ -35,21 +35,28 @@ document.getElementById("btn_arreglo1").addEventListener('click',mostrar)
 
 function generar()
 {
+    /*Creo un nuevo arreglo para que los elementos del arreglo "consolas" se guarden en este y al recorrerlo lo muestren
+    en la tabla*/
     let filas= []
     consolas.forEach((element,index) => {
         
         
         let fila=
         
+        /*acá pongo el index (para que muestre la posición, pero pongo "index+1", ya que quiero que
+        empiece en 1, para que muestre la cantidad de consolas del arreglo y no las posiciones de este )
+
+        */
         `<tr>
-            <td>${index}</td>
+            <td>${index+1}</td>
             <td>${element}</td>
             
         </tr>`
-        consolas.push(fila)
+        /*se van agregando los index y elementos del arreglo consolas establecidos en la variable let en forma de fila en el nuevo
+        arreglo "filas" para agregarlos a la tabla, hasta que se terminen los elementos del arreglo*/
+        filas.push(fila)
         
     });
-    
     
     document.getElementById("tbl_body").innerHTML = filas.join('')
 }
