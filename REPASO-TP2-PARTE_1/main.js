@@ -27,7 +27,7 @@ const mostrar = () =>
     //accedo al elemento "Xbox", previamente obteniendo su posición.
     const Xbox_elemento = consolas[indice_Xbox]
     
-    document.getElementById("p_text").textContent= 'la longitud del arreglo es: ' +longitud+' El último elemento del arreglo es: '+ultimo_elemento+'Mostrando en pantalla el elemento: '+ Xbox_elemento
+    document.getElementById("p_text").textContent= '*la longitud del arreglo es: ' +longitud+' *El último elemento del arreglo es: '+ultimo_elemento+' *Mostrando en pantalla el elemento: '+ Xbox_elemento
 
 }
 
