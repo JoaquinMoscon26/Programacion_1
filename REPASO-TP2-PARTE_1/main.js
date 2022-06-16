@@ -27,7 +27,7 @@ const mostrar = () =>
     //accedo al elemento "Xbox", previamente obteniendo su posición.
     const Xbox_elemento = consolas[indice_Xbox]
     
-    document.getElementById("p_text").textContent= 'la longitud del arreglo es: ' +longitud+' El último elemento del arreglo es: '+ultimo_elemento+'Mostrando en pantalla el elemento: '+ Xbox_elemento
+    document.getElementById("p_text").textContent= '-la longitud del arreglo es: ' +longitud+' -El último elemento del arreglo es: '+ultimo_elemento+' -Mostrando en pantalla el elemento: '+ Xbox_elemento
 
 }
 
@@ -35,18 +35,19 @@ document.getElementById("btn_arreglo1").addEventListener('click',mostrar)
 
 function generar()
 {
+    /*arreglo vacio para ir almacenando los tr que se van a ir acumulando e insertando en el arreglo 
+    filas*/
     let filas= []
     consolas.forEach((element,index) => {
-        
         
         let fila=
         
         `<tr>
-            <td>${index}</td>
+            <td>${index+1}</td>
             <td>${element}</td>
             
         </tr>`
-        consolas.push(fila)
+        filas.push(fila)
         
     });
     
@@ -55,3 +56,26 @@ function generar()
 }
 
 generar()
+
+
+
+function desactivar()
+{
+    /*invoco a la etiqueta p_text, y utilizamos classList para utilizar el toggle, un evento que se usa para 
+    que al apretar un boton en repetidas ocaciones reaccione de forma contraria a la anterior. el fade se usa 
+    para aparecer y esconder el texto 
+    */
+   document.getElementById("p_text").classList.toggle('fade');
+}
+
+/*
+se invoca el boton mediante el ID y se le asigna el evento click para luego, al presionarlo, que realice
+lo seteado (asignado) en la función desactivar
+*/ 
+
+document.getElementById("btn_arreglo1").addEventListener("click",desactivar)
+
+
+
+//document.getElementById("").style.display = 'none' // block
+//document.getElementById("").style.visibility = 'hidden' //show
