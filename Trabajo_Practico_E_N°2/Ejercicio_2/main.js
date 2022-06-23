@@ -5,10 +5,10 @@ criptos.unshift('Stellar')
 
  
 //obtengo el índice de "Shiba Inu" para eliminarlo a el y al elemento siguiente
-const indice_Shiba_Inu = criptos.indexOf('Shiba Inu')
+const posicion = criptos.indexOf('Shiba Inu')
 
 //agrego la posición en la que me quiero parar para eliminar hacia adelante
-const posicion = indice_Shiba_Inu;
+//const posicion = indice_Shiba_Inu;
 //elijo la cantidad de elementos que quiero eliminar
 const numeroElementos = 2;
 

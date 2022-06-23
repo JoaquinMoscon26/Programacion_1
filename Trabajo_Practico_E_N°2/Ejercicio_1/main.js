@@ -27,7 +27,7 @@ const consumir_datos = async() => {
         filas.push(fila)
     });
 
-    //invoco al elemento button.
+    //obtener al elemento button.
     document.getElementById("tbl_body").innerHTML = filas.join('')
 
     
