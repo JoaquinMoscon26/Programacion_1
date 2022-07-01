@@ -24,9 +24,9 @@ function mostrar_forEach() {
 
     numeros.forEach(element => {
 
-        elemento= element %
+        let elemento= element /2
         if (elemento==0) {
-            pares.push(element)
+            pares.push(elemento)
         }
 
     });
