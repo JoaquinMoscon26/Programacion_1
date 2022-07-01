@@ -12,8 +12,12 @@ const obtener_usuario = async () => {
             <td>${element.phone}</td>
         </tr>`
         filas.push(fila)
+
+        
     });
     document.getElementById("tbl_body").innerHTML = filas.join('')
+
+
 }
 //Invocamos a la funcion
 obtener_usuario()
