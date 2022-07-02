@@ -19,14 +19,13 @@ function mostrar_forOf() {
 mostrar_forOf()
 
 
-
 function mostrar_forEach() {
 
     numeros.forEach(element => {
 
-        let elemento= element /2
-        if (elemento==0) {
-            pares.push(elemento)
+        elem= element % 2
+        if (elem==0) {
+            pares.push(element)
         }
 
     });
