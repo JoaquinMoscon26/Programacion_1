@@ -5,57 +5,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="shortcut icon" href="https://www.sosfactory.com/wp-content/uploads/2019/02/icon-gameboy-classic.png" type="image/x-icon">
-    <title>Producto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    
 </head>
 
 <body>
 
     <nav class="navbar" style="background-color: #2b6886; color: #a7f1eb">
         <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1"><img src="https://www.sosfactory.com/wp-content/uploads/2019/02/icon-gameboy-classic.png" width="80px" height="80px">PRODUCTOS</span>
+            <span class="navbar-brand mb-0 h1"><img
+                    src="https://www.sosfactory.com/wp-content/uploads/2019/02/icon-gameboy-classic.png" width="80px"
+                    height="80px">PRODUCTOS</span>
         </div>
     </nav>
 
     <div class="container">
-        <div class="row mt-5">
-            <div class="col-lg-4">
-
-                <label for="inp_desc">Descripción</label>
-                <input class="form-control" type="text" placeholder="Descripción" id="inp_desc"></input>
-
-
-
-            </div>
-
-        </div>
 
         <div class="row mt-3">
+
             <div class="col-lg-4">
 
-                <label for="inp_desc">Precio de Venta</label>
-                <input class="form-control" type="text" placeholder="Precio de Venta" id="inp_Pventa"></input>
+                <div class="mb-3">
+                    <label class="form-label" for="inp_desc">Descripción</label>
+                    <input class="form-control" type="text" placeholder="Descripción" id="inp_desc">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="inp_precio">Precio de Venta</label>
+                    <input class="form-control" type="text" placeholder="Precio de Venta" id="inp_precio">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="select_inp">Categoría</label>
+                    <select class="form-select" aria-label="Default select example" id="select_cat">
+                        <option selected>Seleccionar Categoría</option>
+                        <option value="1">Ryzen 3000</option>
+                        <option value="2">Ryzen 5000</option>
+                        <option value="3">Ryzen 9000</option>
+                        
+                    </select>
+                </div>
+               
+                <button type="button" class="btn btn-outline-info mt-3" id="btn">Guardar</button>
 
             </div>
-        </div>
 
-        <div class="row mt-3">
-            <div class="col-lg-4">
+            <div class="col-lg-8">
 
-                <label for="select_inp">Categoría</label>
-                <select class="form-select" aria-label="Default select example" id="select_inp">
-                    <option selected>Seleccionar Cateogía</option>
-                    <option value="1">Ryzen 3000</option>
-                    <option value="2">Ryzen 5000</option>
-                    <option value="3">Ryzen 9000</option>
-                </select>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Descripción</th>
+                            <th>Precio de Venta</th>
+                            <th>Categoría</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tbl_body">
+
+                    </tbody>
+
+                </table>
+
 
             </div>
+
         </div>
+
     </div>
 
     <script src="main.js" type="module"></script>
+    
 
 </body>
 
