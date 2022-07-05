@@ -16,7 +16,7 @@ export default class Producto {
         let nuevo_producto = {
             descripcion: this.descripcion,
             precio: this.precio,
-            categoria: this.categoria,
+            categoria: this.categoria
         }
         if("productos" in localStorage){
             //Converitmos el JSON obtenido desde el storage, en una expresion nativa de Javascript
@@ -55,8 +55,9 @@ export default class Producto {
                     let fila=`
 
                         <tr>
+                        <td>${index+1}</td>
                         <td>${element.descripcion}</td>
-                        <td>${element.precio_venta}</td>
+                        <td>${element.precio}</td>
                         <td>${element.categoria}</td>
                         <td><button type="button" class="btn btn-outline-danger mt-3">
 
@@ -74,6 +75,13 @@ export default class Producto {
         }
     
         
+    }
+
+    eliminar_producto(){
+
+        
+
+
     }
 
 
