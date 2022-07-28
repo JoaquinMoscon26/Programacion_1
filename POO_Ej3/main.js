@@ -3,7 +3,7 @@ import Producto from "./producto.js";
 function guardar_producto(){
     let descripcion = document.getElementById("inp_desc").value
     let precio_venta = document.getElementById("inp_precio").value
-    let categoria = document.getElementById("select_cat").textContent
+    let categoria = document.getElementById("select_cat").value
     //creamos una instancia y guardamos los datos de 
     let producto = new Producto(descripcion,precio_venta,categoria)
     /*Invocamos(ejecutamos) al metodo guardar_producto(),
