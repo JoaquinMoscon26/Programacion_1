@@ -55,16 +55,22 @@ export default class Producto {
                     let fila=`
 
                         <tr>
-                        <td>${index+1}</td>
-                        <td>${element.descripcion}</td>
-                        <td>${element.precio}</td>
-                        <td>${element.categoria}</td>
-                        <td><button onclick="almacenar_indice(${index})" type="button" class="btn btn-outline-danger mt-3" data-bs-toggle="modal" data-bs-target="#mymodal">
-
-                        <i class="fa fa-trash">
-
-                        </button></td>
+                            <td>${index+1}</td>
+                            <td>${element.descripcion}</td>
+                            <td>${element.precio}</td>
+                            <td>${element.categoria}</td>
+                            <td>
+                                <button onclick="editar_producto(${index})" type="button" class="btn btn-outline-success mt-3">
+                                    <i class="fa fa-edit"></i>
+                                </button>
+                                <button onclick="almacenar_indice(${index})" type="button" class="btn btn-outline-danger mt-3" data-bs-toggle="modal" data-bs-target="#mymodal">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                            </td>
                         <tr>
+                        
+                        
+                        
 
                     `
                     filas.push(fila)
@@ -87,5 +93,16 @@ export default class Producto {
         this.obtener_producto()
     }
 
+    actualizar_producto(){
+        let index = localStorage.getItem("indice")
+        let listado = JSON.parse(localStorage.getItem("productos"))
+
+        //se toman los nuevos valores de descripción, precio y categoría
+        listado[index].descripcion = document.getElementById("inp_desc").value
+        listado[index].precio = document.getElementById("inp_precio").value
+        listado[index].categoria = document.getElementById("select_cat").value
+        localStorage.setItem("productos",JSON.stringify(listado))
+        
 }
+
 
